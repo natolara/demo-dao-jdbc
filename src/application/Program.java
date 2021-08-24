@@ -34,7 +34,11 @@ public class Program {
 			System.out.println(seller2);
 		}
 		
+System.out.println("\n====Teste  4 seller insert==========");	
 		
+		Seller newSeller = new Seller(null, "Greg", "Gre@mail.docm", new Date(), 4000.0, department);
+		sellerDao.insert(newSeller);
+		System.out.println("Inserted! new id = "+ newSeller.getId());
 	}
 
 }
